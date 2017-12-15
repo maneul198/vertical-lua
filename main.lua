@@ -5,6 +5,8 @@ local readline = require('readline')
 local pl = require('pl.pretty')
 log = require("log")
 
+log.outfile = arg[1] or "log.output"
+
 c = cliente({})
 c:get_json_file({})
 

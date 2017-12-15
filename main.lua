@@ -4,6 +4,12 @@ local cliente = require('cliente')
 local readline = require('readline')
 local pl = require('pl.pretty')
 log = require("log")
+local rl = require("rlcompleter")
+
+keywords = {
+	"add_libro", "delete_libro", "add_autor",
+	"delete_autor", "add_resenia", "delete_resenia"
+}
 
 log.outfile = arg[1] or "log.output"
 
